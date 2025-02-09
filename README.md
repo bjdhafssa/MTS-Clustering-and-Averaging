@@ -20,23 +20,20 @@ The purpose of this repository is to provide researchers with the means to repro
 
     Silhouette Score: Implemented using the [tslearn library](https://tslearn.readthedocs.io/en/latest/gen_modules/clustering/tslearn.clustering.silhouette_score.html).
     Davies-Bouldin Score: As there was no implementation handling multivariate time series, we created one to adapt it to the multivariate case. The code is available in this repository.
-- Main Frameworks: Our primary frameworks were tslearn and the aeon toolkit. These libraries support different formats for multivariate time series:
-
-    tslearn uses the format (n_ts, sz, d).
-    aeon uses the format (n_ts, d, sz).
+- Main Frameworks: Our primary frameworks were tslearn and the aeon toolkit. These libraries support different formats for multivariate time series: tslearn uses the format (n_ts, sz, d), aeon uses the format (n_ts, d, sz).
 
   All of our code adapts the data and methods to be compatible with these formats for each combination in our experiments.
   Since the libraries do not provide dependent versions for all time series dissimilarity measures, a fair comparison is achieved by employing the independent versions.
 - Clustering Algorithms Implemented:
   
-   Kmedoids-DTW 
-   Kmedoids-MSM
-   Kmedoids-ShapeDTW
-   Kmeans-MSM
-   Kmeans-ShapeDTW
-   Kmeans-DTW
-   Kmeans-SoftDTW
-   KernelKmeans-GAK
+   Kmedoids-DTW |
+   Kmedoids-MSM |
+   Kmedoids-ShapeDTW |
+   Kmeans-MSM | 
+   Kmeans-ShapeDTW |
+   Kmeans-DTW |
+   Kmeans-SoftDTW |
+   KernelKmeans-GAK |
    Kshape
 
 
