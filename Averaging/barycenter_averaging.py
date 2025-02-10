@@ -173,54 +173,43 @@ def calculate_centroids_and_compare(X, X_ts, y, class_label):
 
 #########################################################################################################################
 
-datasets = ['ArticularyWordRecognition', 
- 'BasicMotions', 
- 'Cricket', 
- 'EigenWorms', 
- 'Epilepsy', 
- 'EthanolConcentration', 
- 'FaceDetection', 
- 'FingerMovements', 
- 'HandMovementDirection', 
- 'Handwriting', 
- 'Heartbeat', 
- 'Libras', 
- 'LSST', 
- 'MotorImagery',
- 'NATOPS', 
- 'PenDigits', 
- 'PEMS-SF', 
- 'Phoneme', 
- 'RacketSports', 
- 'SelfRegulationSCP1',
- 'SelfRegulationSCP2',
- 'StandWalkJump', 
- 'UWaveGestureLibrary']
-
-all_results = []
-
-for dataset in datasets:
-    print(f"Processing dataset: {dataset}")
-    X, y = load_classification(name=dataset)
-    
+def process_datasets(datasets):
+    all_results = []
     normalizer = Normalizer()
-    Xn = normalizer.fit_transform(X)
-    X_ts = Xn[:, :, :].reshape(Xn.shape[0], Xn.shape[2], Xn.shape[1])
     
-    unique_classes = np.unique(y)
-    
-    for class_label in unique_classes:
-        print(f"  Processing class: {class_label}")
-        samples_aeon, samples_tslearn, centroids, comparison = calculate_centroids_and_compare(Xn, X_ts, y, class_label)
+    for dataset in datasets:
+        print(f"Processing dataset: {dataset}")
+        X, y = load_classification(name=dataset)
+        Xn = normalizer.fit_transform(X)
+        X_ts = Xn[:, :, :].reshape(Xn.shape[0], Xn.shape[2], Xn.shape[1])
         
-        for method, distances in comparison.iterrows():
-            result = {
-                'Dataset': dataset,
-                'Class': class_label,
-                'Method': method
-            }
-            result.update(distances.to_dict())
-            all_results.append(result)
+        for class_label in np.unique(y):
+            print(f"  Processing class: {class_label}")
+            _, _, _, comparison = calculate_centroids_and_compare(Xn, X_ts, y, class_label)
+            
+            for method, distances in comparison.iterrows():
+                result = {
+                    'Dataset': dataset,
+                    'Class': class_label,
+                    'Method': method,
+                    **distances.to_dict()
+                }
+                all_results.append(result)
+    
+    return pd.DataFrame(all_results)
 
-# final dataframe
-df_results = pd.DataFrame(all_results)
+##########################################################################################################################
+
+if __name__ == "__main__":
+    datasets = [
+        'ArticularyWordRecognition', 'BasicMotions', 'Cricket', 'EigenWorms', 
+        'Epilepsy', 'EthanolConcentration', 'FaceDetection', 'FingerMovements', 
+        'HandMovementDirection', 'Handwriting', 'Heartbeat', 'Libras', 'LSST', 
+        'MotorImagery', 'NATOPS', 'PenDigits', 'PEMS-SF', 'Phoneme', 
+        'RacketSports', 'SelfRegulationSCP1', 'SelfRegulationSCP2', 
+        'StandWalkJump', 'UWaveGestureLibrary'
+    ]
+    
+    df_results = process_datasets(datasets)
+    print(df_results)
+    # Add code here to save df_results to a file if needed
