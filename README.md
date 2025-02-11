@@ -3,7 +3,7 @@ This is the training code for our paper "Recent Advances in Time Series Averagin
 
 Here is an overview of the main aspects covered:
 
-1- Assessment of Clustering Performance
+## 1- Assessment of Clustering Performance
 
 K-means-based clustering: Comparison of different dissimilarity measures: Elastic Measures, Sliding Measure, Kernel Measures.
     
@@ -12,7 +12,7 @@ K-medoids-based clustering: Comparison with k-means results.
 Nine clustering schemes in total: An in-depth analysis of various combinations, evaluated using two intrinsic and seven extrinsic criteria, and runtime for each. 
 
 
-2- Comparison of Averaging Methods
+## 2- Comparison of Averaging Methods
 
 Four methods evaluated:
 
@@ -33,17 +33,11 @@ The purpose of this repository is to provide researchers with the means to repro
 
   All of our code adapts the data and methods to be compatible with these formats for each combination in our experiments.
   Since the libraries do not provide dependent versions for all time series dissimilarity measures, a fair comparison is achieved by employing the independent versions.
+  
 - Clustering Algorithms Implemented:
   
-   Kmedoids-DTW |
-   Kmedoids-MSM |
-   Kmedoids-ShapeDTW |
-   Kmeans-MSM | 
-   Kmeans-ShapeDTW |
-   Kmeans-DTW |
-   Kmeans-SoftDTW |
-   KernelKmeans-GAK |
-   Kshape
+      In aeon: Kmedoids-DTW | Kmedoids-MSM | Kmedoids-ShapeDTW | Kmeans-MSM | Kmeans-ShapeDTW |
+      In tslearn: Kmeans-DTW | Kmeans-SoftDTW | KernelKmeans-GAK | Kshape
 
 
 
