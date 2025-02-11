@@ -58,11 +58,11 @@ def plot_centroids_for_class_n_dimension(class_samples, centroids, class_label, 
         axes = [ax]
 
     else:
-    # Calculate the number of rows and columns needed for the subplots
-    num_cols = 2
-    num_rows = (num_dimensions + num_cols - 1) // num_cols  # Ceil division to get the number of rows
-    fig, axes = plt.subplots(num_rows, num_cols, figsize=(15, 5 * num_rows))
-    axes = axes.flatten()  # Flatten the 2D array of axes to easily iterate through them
+        # Calculate the number of rows and columns needed for the subplots
+        num_cols = 2
+        num_rows = (num_dimensions + num_cols - 1) // num_cols  # Ceil division to get the number of rows
+        fig, axes = plt.subplots(num_rows, num_cols, figsize=(15, 5 * num_rows))
+        axes = axes.flatten()  # Flatten the 2D array of axes to easily iterate through them
 
     # Define colors for different centroid methods
     method_colors = {'DBA': 'b', 'Soft-DBA': 'g', 'Shape-DBA': 'r', 'TEKA': 'm'}
