@@ -50,6 +50,9 @@ Here is an overview of the main aspects covered:
 
 - All of our code adapts the data and methods to be compatible with these formats for each combination in our experiments.
   
+- Since the libraries do not provide dependent versions for all time series dissimilarity measures, a fair comparison is achieved by employing the independent versions.
+
+  
 
 # Bibliographic References 
 Summary of surveys and benchmarks focused on time series dissimilarity measures and averaging.
@@ -85,7 +88,6 @@ Summary of surveys and benchmarks focused on time series dissimilarity measures 
 - **TSP:** Time series prediction.
 
   
-- Since the libraries do not provide dependent versions for all time series dissimilarity measures, a fair comparison is achieved by employing the independent versions.
   
   
 
