@@ -181,7 +181,7 @@ def process_datasets(datasets):
         print(f"Processing dataset: {dataset}")
         X, y = load_classification(name=dataset)
         Xn = normalizer.fit_transform(X)
-        X_ts = Xn[:, :, :].reshape(Xn.shape[0], Xn.shape[2], Xn.shape[1])
+        X_ts = Xn.transpose(0, 2, 1)
         
         for class_label in np.unique(y):
             print(f"  Processing class: {class_label}")
