@@ -1,5 +1,6 @@
 # MTS Clustering and Averaging
-This is the training code for our paper "Recent Advances in Time Series Averaging: Approaches, Comparative Analysis and Future Directions"
+
+This repository contains the code that supports the results presented in our paper, 'Recent Advances in Time Series Averaging: Approaches, Comparative Analysis, and Future Directions'.
 
 The purpose of this repository is to provide researchers with the means to reproduce our experiments.
 
