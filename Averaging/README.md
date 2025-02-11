@@ -1,4 +1,4 @@
-#### Prerequisites
+### Prerequisites
 
 Ensure you have installed the necessary dependencies, as specified in the main project's requirements.txt file. Key dependencies include:
 
@@ -8,8 +8,9 @@ Ensure you have installed the necessary dependencies, as specified in the main p
     aeon
     teka
 
-Usage
-To run the centroid calculation and comparison script, use the following command:
+### Usage
+
+### To run the centroid calculation and comparison script, use the following command:
 
         python barycenter_averaging_comparison.py
 
@@ -31,3 +32,19 @@ This script will:
  
  4- Display the results as pandas DataFrames. The values in each column represent the average distance between the centroid obtained and all time series in that class for a specific distance metric.
                     
+### To visualize the centroids of a specific class from a dataset, you can use the following command:
+
+        python plot_centroids.py
+
+This script allows you to interactively choose a dataset, a class, and a dimension (or all dimensions) to visualize.
+
+-- Example Interaction:
+
+
+
+
+-- The script will generate a plot like the one below, showing the original time series (in light gray) and the calculated centroids using different methods (in various colors).
+
+
+
+
