@@ -4,6 +4,44 @@ This repository contains the code that supports the results presented in our pap
 
 The purpose of this repository is to provide researchers with the means to reproduce our experiments.
 
+
+
+## Bibliographic References
+
+| Reference                       | # Meas. | Survey Benchmark Data                                                                 | # Datasets | UTS/MTS | I,D Task                     | Aut/Reu/Lib                       |
+|---------------------------------|---------|---------------------------------------------------------------------------------------|------------|---------|------------------------------|-----------------------------------|
+| [Giusti and Batista, 2013]      | 4 EM / 48 | No                                                                                    | UCR (2006) | 42      | NS                           | NS                                | TSCla (1-NN)                     | NS                                |
+| [Wang et al., 2013]             | 7 EM     | Yes                                                                                   | UCR (2006) | 38      | NS                           | NS                                | TSCla (1-NN)                     | Aut (Java), Reu                   |
+| [Serrà and Arcos, 2014]         | 3 EM / 7  | Yes                                                                                   | UCR (2013) | 45      | NS                           | NS                                | TSCla (1-NN)                     | Reu, NS                           |
+| [Salarpour and Khotanlou, 2018] | 14 EM    | No                                                                                    | NS         | 23      | MTS                          | NS                                | HAC                              | Aut (Matlab, Mex)                 |
+| [Paparrizos et al., 2020]       | 7 EM, 4 KM | Yes                                                                                   | UCR (2018) | 128     | UTS                          | —                                | TSCla (1-NN)                     | Matlab, Reu                       |
+| [Parmezan et al., 2022]         | 4 EM / 25 | No                                                                                    | ICMC-USP   | 55      | UTS                          | —                                | kNN-TSPI                         | NS                                |
+| [Shifaz et al., 2023]           | 11 EM    | Yes                                                                                   | UEA (2018) | 23      | MTS                          | I,D                              | TSCla (1-NN)                     | Aut (Java)                        |
+| [Holder et al., 2024]           | 10 EM    | Yes                                                                                   | UCR (2018) | 112     | UTS                          | —                                | TSClu                            | Lib (AEON)                        |
+| [Górecki et al., 2024]          | 27 EM / 56 | Yes                                                                                   | UCR (2019) | 128     | UTS                          | —                                | TSCla (1-NN)                     | Aut (C++), Lib (CRAN)             |
+| [Paparrizos et al., 2024]       | 10 EM, 4 KM / 100+ | Yes                                                                                   | —          | —       | —                            | —                                | —                                | —                                 |
+| **Ours**                        | 5 EM & 2 KM | Yes                                                                                   | UCR (2024) | 22      | MTS                          | I                                | TSClu                            | AEON, tslearn                     |
+
+Summary of surveys and benchmarks focused on time series dissimilarity measures and averaging.
+
+- **# Meas.:** Number of measures considered.
+- **EM:** Elastic measure.
+- **KM:** Kernel measure.
+- **x EM / y:** x EM over a total of y measures.
+- **UTS / MTS:** Univariate / multivariate time series.
+- **I,D:** Independent and Dependent versions of MTS dissimilarity measure.
+- **TSCla:** Time series classification.
+- **TSClu:** Time series clustering.
+- **NN:** Nearest-neighbor.
+- **Rep.:** Repository.
+- **HAC:** Hierarchical agglomerative clustering.
+- **NS:** Not specified.
+- **Aut/Reu/Lib:** Authors’ implementation of code for dissimilarity measures / Reuse of other authors’ code / Library used.
+- **TSP:** Time series prediction.
+
+
+
+
 Here is an overview of the main aspects covered:
 
 ## 1- Assessment of Clustering Performance
