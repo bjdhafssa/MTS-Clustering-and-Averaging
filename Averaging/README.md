@@ -29,5 +29,5 @@ This script will:
          
  3- Evaluate the quality of each centroid by computing its average distance to all time series within its respective class, using different distance metrics.
  
- 4- Display the results as pandas DataFrames.
+ 4- Display the results as pandas DataFrames. The values in each column represent the average distance between the centroid obtained and all time series in that class for a specific distance metric.
                     
