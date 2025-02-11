@@ -1,15 +1,17 @@
 # MTS Clustering and Averaging
 This is the training code for our paper "Recent Advances in Time Series Averaging: Approaches, Comparative Analysis and Future Directions"
 
+The purpose of this repository is to provide researchers with the means to reproduce our experiments.
+
 Here is an overview of the main aspects covered:
 
 ## 1- Assessment of Clustering Performance
 
-K-means-based clustering: Comparison of different dissimilarity measures: Elastic Measures, Sliding Measure, Kernel Measures.
+* K-means-based clustering: Comparison of different dissimilarity measures: Elastic Measures, Sliding Measure, Kernel Measures.
     
-K-medoids-based clustering: Comparison with k-means results.
+* K-medoids-based clustering: Comparison with k-means results.
     
-Nine clustering schemes in total: An in-depth analysis of various combinations, evaluated using two intrinsic and seven extrinsic criteria, and runtime for each. 
+* Nine clustering schemes in total: An in-depth analysis of various combinations, evaluated using two intrinsic and seven extrinsic criteria, and runtime for each. 
   
       In aeon: Kmedoids-DTW | Kmedoids-MSM | Kmedoids-ShapeDTW | Kmeans-MSM | Kmeans-ShapeDTW |
       In tslearn: Kmeans-DTW | Kmeans-SoftDTW | KernelKmeans-GAK | Kshape
@@ -24,10 +26,6 @@ Four methods evaluated:
 [Shape-DBA](https://github.com/MSD-IRIMAS/ShapeDBA),
 [Soft-DBA](https://tslearn.readthedocs.io/en/stable/gen_modules/barycenters/tslearn.barycenters.softdtw_barycenter.html#tslearn.barycenters.softdtw_barycenter), 
 and [TEKA](https://github.com/pfmarteau/py-TEKA/blob/main/README.md).
-
-The purpose of this repository is to provide researchers with the means to reproduce our experiments.
-
-
 
 
 # Data, Protocol and Implementation
