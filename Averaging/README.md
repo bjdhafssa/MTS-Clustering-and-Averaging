@@ -41,7 +41,9 @@ This script allows you to interactively choose a dataset, a class, and a dimensi
 -- Example Interaction:
 
 (WP2-MTS) boujida-h@po-boujida-2022:~/MTS-Clustering-and-Averaging/Averaging$ python plot_centroids.py 
+
 Available datasets:
+
 1. ArticularyWordRecognition
 2. BasicMotions
 3. Cricket
@@ -65,7 +67,8 @@ Available datasets:
 21. SelfRegulationSCP2
 22. StandWalkJump
 23. UWaveGestureLibrary
-Enter the number corresponding to the dataset you want to use: 15
+    
+Enter the number corresponding to the dataset you want to use: 23
 
 Available classes:
 - 1.0
@@ -74,16 +77,19 @@ Available classes:
 - 4.0
 - 5.0
 - 6.0
-Enter the label of the class you want to analyze: 4.0
+  
+Enter the label of the class you want to analyze: 1.0
 
 The dataset has 51 dimensions.
 Enter the dimension you want to visualize (or type 'all' to visualize all dimensions): 0
+
 Centroid comparison plot saved successfully.
 
 
--- The script will generate a plot like the one below, showing the original time series (in light gray) and the calculated centroids using different methods (in various colors).
+-- The script will generate a plot like the one below, showing the original time series (in light gray) and the calculated centroids using different methods.
 
-![image](https://github.com/user-attachments/assets/d222c018-e2f0-44f4-8747-045c40b18942)
+![image](https://github.com/user-attachments/assets/9be2e9c6-cb9d-40d4-a847-c3c5b7d49f4a)
+
 
 
 
