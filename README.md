@@ -10,6 +10,10 @@ K-means-based clustering: Comparison of different dissimilarity measures: Elasti
 K-medoids-based clustering: Comparison with k-means results.
     
 Nine clustering schemes in total: An in-depth analysis of various combinations, evaluated using two intrinsic and seven extrinsic criteria, and runtime for each. 
+  
+      In aeon: Kmedoids-DTW | Kmedoids-MSM | Kmedoids-ShapeDTW | Kmeans-MSM | Kmeans-ShapeDTW |
+      In tslearn: Kmeans-DTW | Kmeans-SoftDTW | KernelKmeans-GAK | Kshape
+
 
 
 ## 2- Comparison of Averaging Methods
@@ -23,6 +27,9 @@ and [TEKA](https://github.com/pfmarteau/py-TEKA/blob/main/README.md).
 
 The purpose of this repository is to provide researchers with the means to reproduce our experiments.
 
+
+
+
 # Data, Protocol and Implementation
 - Data Source: The data used is from [UCR UEA](https://www.timeseriesclassification.com/dataset.php) and was Z-normalized to zero mean and unit standard deviation.
 - Evaluation Protocol: The evaluation relied on extrinsic criteria available in sklearn and two intrinsic criteria:
@@ -34,11 +41,5 @@ The purpose of this repository is to provide researchers with the means to repro
   All of our code adapts the data and methods to be compatible with these formats for each combination in our experiments.
   Since the libraries do not provide dependent versions for all time series dissimilarity measures, a fair comparison is achieved by employing the independent versions.
   
-- Clustering Algorithms Implemented:
   
-      In aeon: Kmedoids-DTW | Kmedoids-MSM | Kmedoids-ShapeDTW | Kmeans-MSM | Kmeans-ShapeDTW |
-      In tslearn: Kmeans-DTW | Kmeans-SoftDTW | KernelKmeans-GAK | Kshape
-
-
-
 
