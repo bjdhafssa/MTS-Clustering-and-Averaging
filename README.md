@@ -21,6 +21,10 @@ Here is an overview of the main aspects covered:
 
 ## 2- Comparison of Averaging Methods
 
+<div style="display: flex; justify-content: flex-end;">
+  <img src="https://github.com/user-attachments/assets/9be2e9c6-cb9d-40d4-a847-c3c5b7d49f4a" alt="Description of image" width="100">
+</div>
+
 Four methods evaluated:
 
 [DBA](https://tslearn.readthedocs.io/en/stable/gen_modules/barycenters/tslearn.barycenters.dtw_barycenter_averaging.html#tslearn.barycenters.dtw_barycenter_averaging), 
