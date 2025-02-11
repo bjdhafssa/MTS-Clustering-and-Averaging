@@ -96,6 +96,30 @@ def plot_centroids_for_class_n_dimension(class_samples, centroids, class_label, 
 
 #######################################################################################################################################
 
+working_datasets = ['ArticularyWordRecognition',
+ 'BasicMotions',
+ 'Cricket',
+ 'EigenWorms',
+ 'Epilepsy',
+ 'EthanolConcentration',
+ 'FaceDetection',
+ 'FingerMovements',
+ 'HandMovementDirection',
+ 'Handwriting',
+ 'Heartbeat',
+ 'Libras',
+ 'LSST',
+ 'MotorImagery',
+ 'NATOPS',
+ 'PenDigits',
+ 'PEMS-SF',
+ 'Phoneme',
+ 'RacketSports',
+ 'SelfRegulationSCP1',
+ 'SelfRegulationSCP2',
+ 'StandWalkJump',
+ 'UWaveGestureLibrary']
+
 def main():
     # Display available datasets and prompt user to choose one
     print("Available datasets:")
