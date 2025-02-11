@@ -39,9 +39,9 @@ and [TEKA](https://github.com/pfmarteau/py-TEKA/blob/main/README.md).
   
 - Main Frameworks: Our primary frameworks were tslearn and the aeon toolkit. These libraries support different formats for multivariate time series: tslearn uses the format (n_ts, sz, d), aeon uses the format (n_ts, d, sz).
 
-  All of our code adapts the data and methods to be compatible with these formats for each combination in our experiments.
+- All of our code adapts the data and methods to be compatible with these formats for each combination in our experiments.
   
-  Since the libraries do not provide dependent versions for all time series dissimilarity measures, a fair comparison is achieved by employing the independent versions.
+- Since the libraries do not provide dependent versions for all time series dissimilarity measures, a fair comparison is achieved by employing the independent versions.
   
   
 
