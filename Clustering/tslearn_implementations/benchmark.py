@@ -50,9 +50,9 @@ def run_benchmark(dataset_name):
             # Save clustering output
             clustering_outputs[f"{method_name}"] = labels
                 
-            print(f"Completed: {dataset_name}, {method_name}, {norm_method}")
+            print(f"Completed: {dataset_name}, {method_name}")
         except Exception as e:
-            print(f"Error with {dataset_name}, {method_name}, {norm_method}: {str(e)}")
+            print(f"Error with {dataset_name}, {method_name}: {str(e)}")
 
     return pd.DataFrame(results), clustering_outputs
 
