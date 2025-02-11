@@ -11,7 +11,7 @@ Ensure you have installed the necessary dependencies, as specified in the main p
 Usage
 To run the centroid calculation and comparison script, use the following command:
 
-        python averaging/averaging_methods.py
+        python barycenter_averaging.py
 
 This script will:
 
