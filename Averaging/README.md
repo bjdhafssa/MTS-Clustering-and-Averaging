@@ -16,11 +16,15 @@ To run the centroid calculation and comparison script, use the following command
 This script will:
 
  1- Load several datasets.
+ 
  2- Calculate centroids for each class in each dataset using:
+ 
          DTW Barycenter Averaging (DBA)
          Soft-DTW Barycenter
          Shape-DBA (Elastic Barycenter Average with Shape-DTW)
          Time Elastic Kernel Alignment (TEKA)
+         
  3- Evaluate the quality of each centroid by computing its average distance to all time series within its respective class, using different distance metrics.
+ 
  4- Display the results as pandas DataFrames.
                     
