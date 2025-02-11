@@ -22,7 +22,6 @@ wokring_datasets = [
     'NATOPS',
     'PenDigits',
     'PEMS-SF',
-    'Phoneme',
     'RacketSports',
     'SelfRegulationSCP1',
     'SelfRegulationSCP2',
