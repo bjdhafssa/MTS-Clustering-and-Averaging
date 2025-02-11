@@ -39,7 +39,8 @@ Here is an overview of the main aspects covered:
 
 # Data, Protocol and Implementation
 - Data Source: The data used is from [UCR UEA](https://www.timeseriesclassification.com/dataset.php) and was Z-normalized to zero mean and unit standard deviation.
-- Evaluation Protocol: The evaluation relied on extrinsic criteria available in sklearn and two intrinsic criteria:
+  
+- Evaluation Protocol: The evaluation of clustering methods relied on extrinsic criteria available in sklearn and two intrinsic criteria:
 
     Silhouette Score: Implemented using the [tslearn library](https://tslearn.readthedocs.io/en/latest/gen_modules/clustering/tslearn.clustering.silhouette_score.html).
   
