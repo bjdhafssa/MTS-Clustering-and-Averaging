@@ -17,19 +17,20 @@ Here is an overview of the main aspects covered:
       In aeon: Kmedoids-DTW | Kmedoids-MSM | Kmedoids-ShapeDTW | Kmeans-MSM | Kmeans-ShapeDTW |
       In tslearn: Kmeans-DTW | Kmeans-SoftDTW | KernelKmeans-GAK | Kshape
 
-
-
 ## 2- Comparison of Averaging Methods
 
-Four methods evaluated:
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    Four methods evaluated:
 
-[DBA](https://tslearn.readthedocs.io/en/stable/gen_modules/barycenters/tslearn.barycenters.dtw_barycenter_averaging.html#tslearn.barycenters.dtw_barycenter_averaging), 
-[Shape-DBA](https://github.com/MSD-IRIMAS/ShapeDBA),
-[Soft-DBA](https://tslearn.readthedocs.io/en/stable/gen_modules/barycenters/tslearn.barycenters.softdtw_barycenter.html#tslearn.barycenters.softdtw_barycenter), 
-and [TEKA](https://github.com/pfmarteau/py-TEKA/blob/main/README.md).
-
-<div style="display: flex; justify-content: flex-end;">
-  <img src="https://github.com/user-attachments/assets/9be2e9c6-cb9d-40d4-a847-c3c5b7d49f4a" alt="Description of image" width="200">
+    - [DBA](https://tslearn.readthedocs.io/en/stable/gen_modules/barycenters/tslearn.barycenters.dtw_barycenter_averaging.html#tslearn.barycenters.dtw_barycenter_averaging)
+    - [Shape-DBA](https://github.com/MSD-IRIMAS/ShapeDBA)
+    - [Soft-DBA](https://tslearn.readthedocs.io/en/stable/gen_modules/barycenters/tslearn.barycenters.softdtw_barycenter.html#tslearn.barycenters.softdtw_barycenter)
+    - [TEKA](https://github.com/pfmarteau/py-TEKA/blob/main/README.md)
+  </div>
+  <div style="flex: 1; display: flex; justify-content: flex-end;">
+    <img src="https://github.com/user-attachments/assets/9be2e9c6-cb9d-40d4-a847-c3c5b7d49f4a" alt="Description of image" width="200">
+  </div>
 </div>
 
 
