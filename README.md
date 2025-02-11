@@ -5,11 +5,11 @@ Here is an overview of the main aspects covered:
 
 1- Assessment of Clustering Performance
 
-    K-means-based clustering: Comparison of different dissimilarity measures: Elastic Measures, Sliding Measure, Kernel Measures.
+K-means-based clustering: Comparison of different dissimilarity measures: Elastic Measures, Sliding Measure, Kernel Measures.
     
-    K-medoids-based clustering: Comparison with k-means results.
+K-medoids-based clustering: Comparison with k-means results.
     
-    Nine clustering schemes in total: An in-depth analysis of various combinations, evaluated using two intrinsic and seven extrinsic criteria, and runtime for each. 
+Nine clustering schemes in total: An in-depth analysis of various combinations, evaluated using two intrinsic and seven extrinsic criteria, and runtime for each. 
 
 
 2- Comparison of Averaging Methods
