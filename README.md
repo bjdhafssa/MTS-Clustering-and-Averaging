@@ -1,6 +1,6 @@
 # MTS Clustering and Averaging
 
-This repository contains the code that supports the results presented in our paper, 'Recent Advances in Time Series Averaging: Approaches, Comparative Analysis, and Future Directions'.
+This repository contains the code that supports the results presented in our paper, 'Recent Advances in Time Series Averaging: Approaches, Comparative Analysis, and Future Directions'. Submmited at The 34th International Joint Conference on Artificial Intelligence (IJCAI-25).
 
 The purpose of this repository is to provide researchers with the means to reproduce our experiments.
 
