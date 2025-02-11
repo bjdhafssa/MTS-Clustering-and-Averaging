@@ -1,4 +1,5 @@
 Prerequisites
+
 Ensure you have installed the necessary dependencies, as specified in the main project's requirements.txt file. Key dependencies include:
 
     numpy
@@ -10,10 +11,9 @@ Ensure you have installed the necessary dependencies, as specified in the main p
 Usage
 To run the centroid calculation and comparison script, use the following command:
 
-             python averaging/averaging_methods.py
+        python averaging/averaging_methods.py
 
 This script will:
-
     1- Load several datasets.
     2- Calculate centroids for each class in each dataset using:
         DTW Barycenter Averaging (DBA)
