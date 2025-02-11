@@ -3,10 +3,10 @@
 
 Running with Aeon:
 
-bash
+/# bash
 python main_benchmark.py BasicMotions --library aeon
 
 Running with Tslearn:
 
-bash
+/# bash
 python main_benchmark.py BasicMotions --library tslearn
