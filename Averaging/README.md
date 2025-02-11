@@ -45,7 +45,9 @@ This script allows you to interactively choose a dataset, a class, and a dimensi
 
 -- The script will generate a plot like the one below, showing the original time series (in light gray) and the calculated centroids using different methods (in various colors).
 
-    ' figures/UwaveGestureLibrary_class_2.0_dim_1.png '
+![Alt text for the image](figures/UwaveGestureLibrary_class_2.0_dim_1.png)
+
+
 
 
 
