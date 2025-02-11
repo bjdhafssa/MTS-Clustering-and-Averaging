@@ -36,7 +36,6 @@ def calculate_centroids_for_class(X, X_ts, y, class_label):
     
     return class_samples_aeon, class_samples_tslearn, centroids
 
-
 def plot_centroids_for_class_n_dimension(class_samples, centroids, class_label, dataset_name, dimension=None):
     """
     Plot centroids for each class with the original time series in the background, 
