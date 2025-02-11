@@ -61,14 +61,13 @@ Available datasets:
 15. NATOPS
 16. PenDigits
 17. PEMS-SF
-18. Phoneme
-19. RacketSports
-20. SelfRegulationSCP1
-21. SelfRegulationSCP2
-22. StandWalkJump
-23. UWaveGestureLibrary
+18. RacketSports
+29. SelfRegulationSCP1
+20. SelfRegulationSCP2
+21. StandWalkJump
+22. UWaveGestureLibrary
     
-Enter the number corresponding to the dataset you want to use: 23
+Enter the number corresponding to the dataset you want to use: 22
 
 Available classes:
 - 1.0
