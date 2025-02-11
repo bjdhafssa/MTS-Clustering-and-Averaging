@@ -19,10 +19,10 @@ This script will:
  
  2- Calculate centroids for each class in each dataset using:
  
-         DTW Barycenter Averaging (DBA)
-         Soft-DTW Barycenter
-         Shape-DBA (Elastic Barycenter Average with Shape-DTW)
-         Time Elastic Kernel Alignment (TEKA)
+ DTW Barycenter Averaging (DBA)
+ Soft-DTW Barycenter
+ Shape-DBA (Elastic Barycenter Average with Shape-DTW)
+ Time Elastic Kernel Alignment (TEKA)
          
  3- Evaluate the quality of each centroid by computing its average distance to all time series within its respective class, using different distance metrics.
  
