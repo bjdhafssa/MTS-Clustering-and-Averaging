@@ -31,7 +31,7 @@ Here is an overview of the main aspects covered:
       </ul>
     </td>
     <td style="vertical-align: top; text-align: right;">
-      <img src="https://github.com/user-attachments/assets/9be2e9c6-cb9d-40d4-a847-c3c5b7d49f4a" alt="Description of image" width="200">
+      <img src="https://github.com/user-attachments/assets/9be2e9c6-cb9d-40d4-a847-c3c5b7d49f4a" alt="Description of image" width="300">
     </td>
   </tr>
 </table>
