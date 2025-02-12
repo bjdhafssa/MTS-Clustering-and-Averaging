@@ -37,6 +37,8 @@ Below are the [CD-diagrams](https://github.com/hfawaz/cd-diagram) evaluating the
 
 <img src="https://github.com/user-attachments/assets/4ed1206d-8ff2-4733-a4c0-30e5b87f20cc" alt="ARI Score CD-Diagram" width="700">
 
+
+
 **Computational Runtime**
 
 The following CD-diagram compares the computational runtime (in seconds) for one iteration across nine clustering schemes:
