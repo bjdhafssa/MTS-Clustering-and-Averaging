@@ -3,22 +3,27 @@ import sys
 import importlib.util
 import os
 
+
+# Add the paths of the directories containing the dynamic modules
+sys.path.append(os.path.abspath("aeon_implementations"))
+sys.path.append(os.path.abspath("tslearn_implementations"))
+
+
 def dynamic_import(directory, module_name):
     """
     Dynamically imports a module from a specific directory.
-    
-    Args:
-        directory (str): The path to the directory containing the module.
-        module_name (str): The name of the module (without .py extension).
-    
-    Returns:
-        module: The imported module.
     """
     module_path = os.path.join(directory, f"{module_name}.py")
+    print(f"Trying to import {module_name} from {module_path}")  # Debug print
+    if not os.path.exists(module_path):
+        raise FileNotFoundError(f"Module file not found: {module_path}")
+    
     spec = importlib.util.spec_from_file_location(module_name, module_path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
+
+
 
 def main():
     # Step 1: Create ArgumentParser
