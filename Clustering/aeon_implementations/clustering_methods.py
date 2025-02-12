@@ -15,8 +15,8 @@ def kmedoids_shape_dtw(X, n_clusters):
 
 def kmeans_msm(X, n_clusters):
     return TimeSeriesKMeans(n_clusters=n_clusters, distance="msm", 
-                            averaging_method="ba", init='k-means++' ,n_init=10, max_iter=100).fit_predict(X)
+                            averaging_method="ba", init="k-means++" ,n_init=10, max_iter=100).fit_predict(X)
 
 def kmeans_shape_dtw(X, n_clusters):
     return TimeSeriesKMeans(n_clusters=n_clusters, distance="shape_dtw", 
-                            averaging_method="ba", init='k-means++', n_init=10, max_iter=100).fit_predict(X)
+                            averaging_method="ba", init="k-means++", n_init=10, max_iter=100).fit_predict(X)
