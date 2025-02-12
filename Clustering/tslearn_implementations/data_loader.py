@@ -4,7 +4,7 @@ import numpy as np
 from tslearn.datasets import UCR_UEA_datasets
 
 # List of datasets that are known to work successfully
-wokring_datasets = [
+working_datasets = [
     'ArticularyWordRecognition',
     'BasicMotions',
     'Cricket',
