@@ -35,13 +35,14 @@ Evaluation Metrics
 
 Below are the [CD-diagrams](https://github.com/hfawaz/cd-diagram) evaluating the clustering results using the Silhouette Score and Adjusted Rand Index (ARI) Score:
 
-Silhouette Score CD-Diagram:
 
-![image](https://github.com/user-attachments/assets/8c7d9dce-8fcc-4d19-9abf-a22b2b0051c8)
+**Silhouette Score CD-Diagram:**
 
-ARI Score CD-Diagram:
+<img src="https://github.com/user-attachments/assets/8c7d9dce-8fcc-4d19-9abf-a22b2b0051c8" alt="Silhouette Score CD-Diagram" width="400">
 
-![image](https://github.com/user-attachments/assets/4ed1206d-8ff2-4733-a4c0-30e5b87f20cc) 
+**ARI Score CD-Diagram:**
+
+<img src="https://github.com/user-attachments/assets/4ed1206d-8ff2-4733-a4c0-30e5b87f20cc" alt="ARI Score CD-Diagram" width="400">
 
 
 Clustering Schemes
