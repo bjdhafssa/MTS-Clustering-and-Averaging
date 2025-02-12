@@ -41,7 +41,7 @@ def kernel_kmeans_gak(X, n_clusters):
 
 ############################################################################
 
-def kshape_method(X, n_clusters):
+def kshape(X, n_clusters):
 
     model = KShape(n_clusters=n_clusters, max_iter=100, init="random")
     
@@ -88,7 +88,7 @@ if __name__ == "__main__":
         ("KMeans-DTW", kmeans_dtw),
         ("KMeans-Soft-DTW", kmeans_soft_dtw),
         ("KernelKMeans-GAK", kernel_kmeans_gak),
-        ("KShape", kshape_method)
+        ("KShape", kshape)
     ]
 
     # Apply each clustering method and display results
