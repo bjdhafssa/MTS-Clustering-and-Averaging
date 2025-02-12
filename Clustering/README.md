@@ -23,24 +23,22 @@ Running with Tslearn:
 <dataset_name>: Replace BasicMotions with the name of the dataset you want to process.
 --library: Specify which library to use for clustering. 
 
-###### Resuls : 
+**Resuls :** 
 
 Computational Runtime
 
 The following CD-diagram compares the computational runtime (in seconds) for one iteration across nine clustering schemes:
 
-![image](https://github.com/user-attachments/assets/c02ea9b4-2780-4100-a6bf-24b5ab91d3ff)
+<img src="https://github.com/user-attachments/assets/c02ea9b4-2780-4100-a6bf-24b5ab91d3ff" alt="Computational Runtime" width="400">
+
 
 Evaluation Metrics
 
 Below are the [CD-diagrams](https://github.com/hfawaz/cd-diagram) evaluating the clustering results using the Silhouette Score and Adjusted Rand Index (ARI) Score:
 
 
-**Silhouette Score CD-Diagram:**
-
 <img src="https://github.com/user-attachments/assets/8c7d9dce-8fcc-4d19-9abf-a22b2b0051c8" alt="Silhouette Score CD-Diagram" width="400">
 
-**ARI Score CD-Diagram:**
 
 <img src="https://github.com/user-attachments/assets/4ed1206d-8ff2-4733-a4c0-30e5b87f20cc" alt="ARI Score CD-Diagram" width="400">
 
