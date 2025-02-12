@@ -7,7 +7,7 @@ import numpy as np
 
 #######################################################################
 
-def kmeans_dtw_dba(X, n_clusters):
+def kmeans_dtw(X, n_clusters):
     
     model = TimeSeriesKMeans(n_clusters=n_clusters,
                              max_iter = 100, 
@@ -19,7 +19,7 @@ def kmeans_dtw_dba(X, n_clusters):
 
 #########################################################################
 
-def kmeans_soft_dtw_soft_dba(X, n_clusters):
+def kmeans_soft_dtw(X, n_clusters):
     
     model = TimeSeriesKMeans(n_clusters=n_clusters,
                              max_iter = 100, 
@@ -32,7 +32,7 @@ def kmeans_soft_dtw_soft_dba(X, n_clusters):
 
 ###########################################################################
 
-def kernel_kmeans_gak_teka(X, n_clusters):
+def kernel_kmeans_gak(X, n_clusters):
     
     model = KernelKMeans(n_clusters=n_clusters, kernel="gak", max_iter=100, n_init=10)
     
@@ -85,9 +85,9 @@ if __name__ == "__main__":
 
     # List of clustering methods to apply
     methods = [
-        ("KMeans-DTW-DBA", kmeans_dtw_dba),
-        ("KMeans-Soft-DTW Soft-DBA", kmeans_soft_dtw_soft_dba),
-        ("KernelKMeans-GAK", kernel_kmeans_gak_teka),
+        ("KMeans-DTW", kmeans_dtw),
+        ("KMeans-Soft-DTW", kmeans_soft_dtw),
+        ("KernelKMeans-GAK", kernel_kmeans_gak),
         ("KShape", kshape_method)
     ]
 
