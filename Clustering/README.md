@@ -29,7 +29,7 @@ Computational Runtime
 
 The following CD-diagram compares the computational runtime (in seconds) for one iteration across nine clustering schemes:
 
-<img src="https://github.com/user-attachments/assets/c02ea9b4-2780-4100-a6bf-24b5ab91d3ff" alt="Computational Runtime" width="500">
+<img src="https://github.com/user-attachments/assets/c02ea9b4-2780-4100-a6bf-24b5ab91d3ff" alt="Computational Runtime" width="700">
 
 
 Evaluation Metrics
@@ -38,14 +38,14 @@ Below are the [CD-diagrams](https://github.com/hfawaz/cd-diagram) evaluating the
 
 **Silhouette Score CD-Diagram:**
 
-<img src="https://github.com/user-attachments/assets/8c7d9dce-8fcc-4d19-9abf-a22b2b0051c8" alt="Silhouette Score CD-Diagram" width="500">
+<img src="https://github.com/user-attachments/assets/8c7d9dce-8fcc-4d19-9abf-a22b2b0051c8" alt="Silhouette Score CD-Diagram" width="700">
 
 **ARI Score CD-Diagram:**
 
-<img src="https://github.com/user-attachments/assets/4ed1206d-8ff2-4733-a4c0-30e5b87f20cc" alt="ARI Score CD-Diagram" width="500">
+<img src="https://github.com/user-attachments/assets/4ed1206d-8ff2-4733-a4c0-30e5b87f20cc" alt="ARI Score CD-Diagram" width="700">
 
 
-Clustering Schemes
+###### Clustering Schemes
 
 
 'Kmedoids-dtw' : 'Kmed-dtw'
