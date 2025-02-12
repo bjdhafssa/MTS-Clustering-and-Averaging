@@ -7,15 +7,15 @@ import sys
 import timeit
 from data_loader import load_dataset, working_datasets
 from preprocessor import preprocess_data
-from clustering_methods import kmeans_dtw_dba, kmeans_soft_dtw_soft_dba, kernel_kmeans_gak_teka, kshape_method
+from clustering_methods import kmeans_dtw, kmeans_soft_dtw, kernel_kmeans_gak, kshape
 from evaluator import evaluate_clustering
 
 def run_benchmark(dataset_name):
     clustering_methods = [
-        ("K-means DTW-DBA", kmeans_dtw_dba),
-        ("K-means Soft-DTW Soft-DBA", kmeans_soft_dtw_soft_dba),
-        ("Kernel K-means GAK", kernel_kmeans_gak_teka),
-        ("K-Shape", kshape_method)
+        ("K-means DTW", kmeans_dtw),
+        ("K-means Soft-DTW", kmeans_soft_dtw),
+        ("Kernel K-means GAK", kernel_kmeans_gak),
+        ("K-Shape", kshape)
     ]
 
         
@@ -26,34 +26,6 @@ def run_benchmark(dataset_name):
     X = np.concatenate((X_train, X_test), axis=0)
     y = np.concatenate((y_train, y_test), axis=0)
     n_clusters = len(np.unique(y))
-    X_processed = preprocess_data(X)
-
-    # benchmark.py
-import pickle
-import os
-import pandas as pd
-import sys
-import timeit
-from data_loader import load_dataset, get_n_clusters, working_datasets
-from preprocessor import preprocess_data
-from clustering_methods import kmedoids_dtw, kmedoids_msm, kmedoids_shape_dtw, kmeans_msm, kmeans_shape_dtw
-from evaluator import evaluate_clustering
-
-def run_benchmark(dataset_name):
-    clustering_methods = [
-        ("KMedoids-DTW", kmedoids_dtw),
-        ("KMedoids-MSM", kmedoids_msm),
-        ("KMedoids-ShapeDTW", kmedoids_shape_dtw),
-        ("KMeans-MSM", kmeans_msm),
-        ("KMeans-ShapeDTW", kmeans_shape_dtw)
-    ]
-   
-    results = []
-    clustering_outputs = {}
-
-    
-    X, y = load_dataset(dataset_name)
-    n_clusters = get_n_clusters(y)
     X_processed = preprocess_data(X)
 
 
