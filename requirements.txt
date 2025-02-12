@@ -1,0 +1,7 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+teka
+tslearn==0.6.3
+aeon==1.0.0
