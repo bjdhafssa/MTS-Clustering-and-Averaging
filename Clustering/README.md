@@ -20,10 +20,39 @@ Running with Tslearn:
 
 ###### Explanation of Arguments
 
-    <dataset_name>:
-        Replace BasicMotions with the name of the dataset you want to process.
-        The dataset must be one of the predefined datasets (see Available Datasets).
-    --library:
-        Specify which library to use for clustering. Options are:
-            aeon: Use clustering methods implemented with the Aeon library.
-            tslearn: Use clustering methods implemented with the Tslearn library.
+<dataset_name>: Replace BasicMotions with the name of the dataset you want to process.
+--library: Specify which library to use for clustering. 
+
+###### Resuls : 
+
+Computational Runtime
+
+The following CD-diagram compares the computational runtime (in seconds) for one iteration across nine clustering schemes:
+
+![image](https://github.com/user-attachments/assets/c02ea9b4-2780-4100-a6bf-24b5ab91d3ff)
+
+Evaluation Metrics
+
+Below are the [CD-diagrams](https://github.com/hfawaz/cd-diagram) evaluating the clustering results using the Silhouette Score and Adjusted Rand Index (ARI) Score:
+
+Silhouette Score CD-Diagram:
+
+![image](https://github.com/user-attachments/assets/8c7d9dce-8fcc-4d19-9abf-a22b2b0051c8)
+
+ARI Score CD-Diagram:
+
+![image](https://github.com/user-attachments/assets/4ed1206d-8ff2-4733-a4c0-30e5b87f20cc) 
+
+
+Clustering Schemes
+
+
+'Kmedoids-dtw' : 'Kmed-dtw'
+'Kmedoids-msm' : 'Kmed-msm'
+'Kmedoids-shapedtw' : 'Kmed-shapedtw'
+'Kmeans-msm' : 'KM-msm'
+'Kmeans-shapedtw' : 'KM-shapedtw'
+'Kmeans-dtw' : 'KM-dtw'
+'Kmeans-softdtw' : 'KM-softdtw'
+'KernelKmeans-gak' : 'KKMe-gak'
+'Kshape' : 'Kshape'
