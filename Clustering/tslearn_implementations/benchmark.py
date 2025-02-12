@@ -40,19 +40,19 @@ def run_benchmark(dataset_name):
                 
             result = {
                     "Dataset": dataset_name,
-                    "Clustering Method": method_name,
+                    "Clustering Method": clustering_method,
                     **metrics
                 }
             results.append(result)
                 
-            print(f"Completed: {dataset_name}, {method_name}, Runtime: {runtime:.2f} seconds")
+            print(f"Completed: {dataset_name}, {clustering_method}, Runtime: {runtime:.2f} seconds")
                 
             # Save clustering output
             clustering_outputs[f"{method_name}"] = labels
                 
-            print(f"Completed: {dataset_name}, {method_name}")
+            print(f"Completed: {dataset_name}, {clustering_method}")
         except Exception as e:
-            print(f"Error with {dataset_name}, {method_name}: {str(e)}")
+            print(f"Error with {dataset_name}, {clustering_method}: {str(e)}")
 
     return pd.DataFrame(results), clustering_outputs
 
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     output_dir = f"clustering_outputs_{dataset_name}"
     os.makedirs(output_dir, exist_ok=True)
     for method_name, labels in clustering_outputs.items():
-        with open(os.path.join(output_dir, f"{method_name}.pkl"), 'wb') as f:
+        with open(os.path.join(output_dir, f"{clustering_method}.pkl"), 'wb') as f:
             pickle.dump(labels, f)
     print(f"Clustering outputs saved to {output_dir}")
     
