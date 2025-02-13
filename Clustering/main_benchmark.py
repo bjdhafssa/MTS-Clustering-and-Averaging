@@ -52,6 +52,8 @@ def main():
         implementation_dir = "aeon_implementations"
     elif args.library == "tslearn":
         implementation_dir = "tslearn_implementations"
+
+    print(f"Using implementation directory: {implementation_dir}")
     
     # Step 5: Dynamically import modules from the chosen implementation directory
     try:
