@@ -57,18 +57,22 @@ Here is an overview of the main aspects covered:
 # Bibliographic References 
 Summary of surveys and benchmarks focused on time series dissimilarity measures and averaging.
 
-| Reference                       | # Meas. | Survey  | Data | # Datasets | UTS/MTS | I,D | Task  | Aut/Reu/Lib   |
-| [Giusti and Batista, 2013](https://dl.acm.org/doi/10.1109/BRACIS.2013.22)      | 4 EM / 48 | No   | UCR (2006) | 42      | NS      | NS      | TSCla (1-NN)      | NS   |
-| [Wang et al., 2013](https://link.springer.com/article/10.1007/s10618-012-0250-5)             | 7 EM     | Yes   | UCR (2006) | 38      | NS     | NS       | TSCla (1-NN)      | Aut (Java), Reu                   |
-| [Serrà and Arcos, 2014](https://dl.acm.org/doi/10.1016/j.knosys.2014.04.035)        | 3 EM / 7  | Yes    | UCR (2013) | 45      | NS        | NS        | TSCla (1-NN)     | Reu, NS                           |
-| [Salarpour and Khotanlou, 2018](https://www.sciencedirect.com/science/article/abs/pii/S0031320317303163) | 14 EM    | No        | NS         | 23      | MTS     | NS        | HAC     | Aut (Matlab, Mex)                 |
-| [Paparrizos et al., 2020](https://dl.acm.org/doi/10.1145/3318464.3389760)       | 7 EM, 4 KM | Yes     | UCR (2018) | 128     | UTS       | —         | TSCla (1-NN)    | Matlab, Reu                       |
-| [Parmezan et al., 2022](https://www.researchgate.net/publication/362170345_Time_Series_Prediction_via_Similarity_Search_Exploring_Invariances_Distance_Measures_and_Ensemble_Functions)| 4 EM / 25| No|ICMC-USP | 55| UTS  | —   |kNN-TSPI| NS  |
-| [Shifaz et al., 2023](https://link.springer.com/article/10.1007/s10115-023-01835-4)          | 11 EM    | Yes   | UEA (2018) | 23      | MTS   | I,D    | TSCla (1-NN)    | Aut (Java)     |
-| [Holder et al., 2024](https://link.springer.com/article/10.1007/s10115-023-01952-0)          | 10 EM    | Yes         | UCR (2018) | 112     | UTS     | —    | TSClu     | Lib (AEON)           |
-| [Górecki et al., 2024](https://www.sciencedirect.com/science/article/abs/pii/S1877750324000280)  | 27 EM / 56 | Yes   | UCR (2019) | 128     | UTS    | —   | TSCla (1-NN)  | Aut (C++), Lib (CRAN)             |
-| [Paparrizos et al., 2024](https://arxiv.org/abs/2412.20574v1)       | 10 EM, 4 KM / 100+ | Yes        | —          | —       | —     | —      | —       | —                                 |
-| **Ours**                | 5 EM & 2 KM | Yes          | UCR (2024) | 22      | MTS      | I        | TSClu      | AEON, tslearn                     |
+
+| Reference                       | # Meas. | Survey | Data       | # Datasets | UTS/MTS | I,D | Task       | Aut/Reu/Lib   |
+|---------------------------------|---------|--------|------------|------------|---------|-----|-------------|---------------|
+| [Giusti and Batista, 2013](https://dl.acm.org/doi/10.1109/BRACIS.2013.22)      | 4 EM / 48 | No     | UCR (2006)   | 42          | NS      | NS   | TSCla (1-NN) | NS                     |
+| [Wang et al., 2013](https://link.springer.com/article/10.1007/s10618-012-0250-5)             | 7 EM     | Yes    | UCR (2006)   | 38          | NS      | NS   | TSCla (1-NN) | Aut (Java), Reu       |
+| [Serrà and Arcos, 2014](https://dl.acm.org/doi/10.1016/j.knosys.2014.04.035)        | 3 EM / 7  | Yes    | UCR (2013)   | 45          | NS      | NS   | TSCla (1-NN) | Reu, NS               |
+| [Salarpour and Khotanlou, 2018](https://www.sciencedirect.com/science/article/abs/pii/S0031320317303163) | 14 EM    | No     | NS           | 23          | MTS     | NS   | HAC         | Aut (Matlab, Mex)     |
+| [Paparrizos et al., 2020](https://dl.acm.org/doi/10.1145/3318464.3389760)       | 7 EM, 4 KM | Yes    | UCR (2018)   | 128         | UTS     | —    | TSCla (1-NN) | Matlab, Reu           |
+| [Parmezan et al., 2022](https://www.researchgate.net/publication/362170345_Time_Series_Prediction_via_Similarity_Search_Exploring_Invariances_Distance_Measures_and_Ensemble_Functions)| 4 EM / 25| No     | ICMC-USP     | 55          | UTS     | —    | kNN-TSPI     | NS                    |
+| [Shifaz et al., 2023](https://link.springer.com/article/10.1007/s10115-023-01835-4)          | 11 EM    | Yes    | UEA (2018)   | 23          | MTS     | I,D  | TSCla (1-NN) | Aut (Java)           |
+| [Holder et al., 2024](https://link.springer.com/article/10.1007/s10115-023-01952-0)          | 10 EM    | Yes    | UCR (2018)   | 112         | UTS     | —    | TSClu        | Lib (AEON)            |
+| [Górecki et al., 2024](https://www.sciencedirect.com/science/article/abs/pii/S1877750324000280)  | 27 EM / 56 | Yes    | UCR (2019)   | 128         | UTS     | —    | TSCla (1-NN) | Aut (C++), Lib (CRAN) |
+| [Paparrizos et al., 2024](https://arxiv.org/abs/2412.20574v1)       | 10 EM, 4 KM / 100+ | Yes    | —            | —            | —      | —    | —           | —                     |
+| **Ours**                        | 5 EM & 2 KM | Yes    | UCR (2024)   | 22          | MTS     | I    | TSClu        | AEON, tslearn         |
+
+
 
 
 - **# Meas.:** Number of measures considered.
