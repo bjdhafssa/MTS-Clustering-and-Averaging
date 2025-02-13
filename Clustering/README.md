@@ -10,18 +10,20 @@ Tslearn: Offers KShape clustering and supports Soft-DTW, a distance metric not f
 
 Running with Aeon: 
 
-       python main_benchmark.py BasicMotions --library aeon
-
+       $ cd aeon_implementations
+       $ python benchmark.py BasicMotions
 
 Running with Tslearn:
 
-       python main_benchmark.py BasicMotions --library tslearn
+       
+       $ cd tslearn_implementations
+       $ python benchmark.py BasicMotions
 
 
 ###### Explanation of Arguments
 
 <dataset_name>: Replace BasicMotions with the name of the dataset you want to process.
---library: Specify which library to use for clustering. 
+[//]: <> (--library: Specify which library to use for clustering.)
 
 ## Results :
 
