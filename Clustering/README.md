@@ -23,7 +23,6 @@ Running with Tslearn:
 ###### Explanation of Arguments
 
 <dataset_name>: Replace BasicMotions with the name of the dataset you want to process.
-[--library: Specify which library to use for clustering.]: <> 
 
 ## Results :
 
