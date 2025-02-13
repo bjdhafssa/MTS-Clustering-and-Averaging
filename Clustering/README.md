@@ -17,7 +17,7 @@ Running with Tslearn:
 
        
        $ cd tslearn_implementations
-       $ python benchmark.py BasicMotions
+       $ python benchmark.py <dataset_name>
 
 
 ###### Explanation of Arguments
