@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 from tslearn.barycenters import dtw_barycenter_averaging, softdtw_barycenter
 from aeon.clustering.averaging import elastic_barycenter_average
