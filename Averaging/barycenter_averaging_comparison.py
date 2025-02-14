@@ -212,4 +212,7 @@ if __name__ == "__main__":
     ]
     
     df_results = process_datasets(datasets)
-    print(df_results)
+    # Save the results to a CSV file
+    results_df.to_csv(f"averaging_results_{dataset_name}.csv", index=False)
+    print(f"Results saved to averaging_results_{dataset_name}.csv")
+
