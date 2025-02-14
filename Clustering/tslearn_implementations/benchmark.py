@@ -34,10 +34,10 @@ def run_benchmark(dataset_name):
             # runtime
             runtime = timeit.timeit(lambda: clustering_function(X_processed, n_clusters), number=1)
             
-            # Appeler la fonction de clustering
+            # clustering function
             labels = clustering_function(X_processed, n_clusters)
             
-            # Évaluer les métriques de clustering
+            # evaluation
             metrics = evaluate_clustering(X_processed, labels, true_labels=y)
             
             # Ajouter les résultats au tableau
