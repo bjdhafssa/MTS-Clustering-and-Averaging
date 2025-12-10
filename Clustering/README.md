@@ -32,19 +32,19 @@ Below are the [CD-diagrams](https://github.com/hfawaz/cd-diagram) evaluating the
 
 * Silhouette Score CD-Diagram:
 
-![Silhouette Score CD-Diagram](Clustering/figures/cd-diagram-silhouette.png)
+![Silhouette Score CD-Diagram](figures/cd-diagram-silhouette.png)
 
 
 * ARI Score CD-Diagram:
 
-![ARI Score CD-Diagram](Clustering/figures/cd-diagram-ari.png)
+![ARI Score CD-Diagram](figures/cd-diagram-ari.png)
 
 
 **Computational Runtime**
 
 The following CD-diagram compares the computational runtime (in seconds) for one iteration across nine clustering schemes:
 
-![Computational Runtime CD-Diagram](Clustering/figures/cd-diagram-runtime.png)
+![Computational Runtime CD-Diagram](figures/cd-diagram-runtime.png)
 
 
 ###### Clustering Schemes
