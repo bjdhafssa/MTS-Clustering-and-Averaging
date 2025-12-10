@@ -5,6 +5,8 @@ This project uses both Aeon and Tslearn libraries for a comparative analysis of 
 
 Aeon: Features TimeSeriesKMedoids clustering and supports distance metrics like Shape-DTW and MSM, which are not available in Tslearn.
 Tslearn: Offers KShape clustering and supports Soft-DTW, a distance metric not found in Aeon.
+Unique Contribution: We also integrated two new kernel-based methods, kmedoids-kdtw and kmeans-teka. This combination was not supported in any existing library, making this its [first implementation](https://github.com/pfmarteau/KMeans_TEKA).
+
 
 ### Example Usage : 
 
@@ -53,6 +55,8 @@ The following CD-diagram compares the computational runtime (in seconds) for one
 'Kmedoids-dtw' : 'Kmed-dtw'
 'Kmedoids-msm' : 'Kmed-msm'
 'Kmedoids-shapedtw' : 'Kmed-shapedtw'
+'Kmedoids-kdtw' : 'kmed-kdtw'
+'Kmeans-teka' : 'KM-teka'
 'Kmeans-msm' : 'KM-msm'
 'Kmeans-shapedtw' : 'KM-shapedtw'
 'Kmeans-dtw' : 'KM-dtw'

@@ -58,7 +58,8 @@ def evaluate_clustering(X, labels, true_labels=None, metric="dtw", **metric_para
     metrics = {}
     
     # Transpose X to match tslearn's expected shape (n_ts, sz, d)
-    X_tslearn = np.transpose(X, (0, 2, 1))
+    X_tslearn = X.transpose(0, 2, 1)
+    #X_tslearn = np.transpose(X, (0, 2, 1))
     
     # Intrinsic metric (doesn't require true labels)
     metrics["Silhouette"] = silhouette_score(X, labels)

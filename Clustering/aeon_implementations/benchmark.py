@@ -3,59 +3,68 @@ import pickle
 import os
 import pandas as pd
 import sys
+import numpy as np
 import timeit
+import time
 from data_loader import load_dataset, get_n_clusters, working_datasets
 from preprocessor import preprocess_data
-from clustering_methods import kmedoids_dtw, kmedoids_msm, kmedoids_shape_dtw, kmeans_msm, kmeans_shape_dtw
+from clustering_methods_pfm import kmedoids_dtw, kmedoids_msm, kmedoids_shape_dtw, kmeans_msm, kmeans_shape_dtw, kmeans_teka, kmedoids_kdtw
 from evaluator import evaluate_clustering
+
+verbose = True
 
 def run_benchmark(dataset_name):
     clustering_methods = [
-        ("KMedoids-DTW", kmedoids_dtw),
-        ("KMedoids-MSM", kmedoids_msm),
-        ("KMedoids-ShapeDTW", kmedoids_shape_dtw),
-        ("KMeans-MSM", kmeans_msm),
-        ("KMeans-ShapeDTW", kmeans_shape_dtw)
+        #("KMedoids-DTW", kmedoids_dtw),
+        #("KMedoids-MSM", kmedoids_msm),
+        #("KMedoids-ShapeDTW", kmedoids_shape_dtw),
+        ("KMedoids-KDTW", kmedoids_kdtw),
+        #("KMeans-MSM", kmeans_msm),
+        #("KMeans-ShapeDTW", kmeans_shape_dtw),
+        ("KMeans-TEKA", kmeans_teka)
     ]
    
     results = []
     clustering_outputs = {}
 
-    
     X, y = load_dataset(dataset_name)
     n_clusters = get_n_clusters(y)
     X_processed = preprocess_data(X)
 
-    
-    for method_name, clustering_function in clustering_methods:
-        try:
+    if verbose:
+        print("DATASET:", dataset_name, "shape:", np.shape(X), "n_clusters:",n_clusters)
+       
+    for clustering_method in clustering_methods:
+        #try:
+            method_name = clustering_method[0] 
+            if verbose:   
+                print('processing', method_name)
             # runtime
-            runtime = timeit.timeit(lambda: clustering_function(X_processed, n_clusters), number=1)
-            
-            # clustering function
-            labels = clustering_function(X_processed, n_clusters)
-            
-            # evaluation
+            start_time = time.time() #pfm
+            args = {"n_clusters":n_clusters, "n_init":20, "sigma":1.0, "epsilon":1e-270, "gamma":1.0}
+            labels = clustering_method[1](X_processed, args)
+            runtime = time.time() - start_time 
+
             metrics = evaluate_clustering(X_processed, labels, true_labels=y)
-            
-            # Ajouter les résultats au tableau
+                
             result = {
-                "Dataset": dataset_name,
-                "Clustering Method": method_name,
-                "Runtime": runtime,
-                **metrics
-            }
+                    "Dataset": dataset_name,
+                    "Clustering Method": method_name,
+                    "Elapsed time": runtime,
+                    **metrics
+                }
+            if verbose:
+                print(result)
             results.append(result)
-            
+                
             print(f"Completed: {dataset_name}, {method_name}, Runtime: {runtime:.2f} seconds")
-            
-            # save labels
-            clustering_outputs[method_name] = labels
-            
-        except Exception as e:
-            print(f"Error with {dataset_name}, {method_name}: {str(e)}")
-
-
+                
+            # Save clustering output
+            clustering_outputs[f"{method_name}"] = labels
+                
+            print(f"Completed: {dataset_name}, {method_name}")
+        #except Exception as e:
+        #    print(f"Error with {dataset_name}, {method_name}: {str(e)}")
 
     return pd.DataFrame(results), clustering_outputs   
     
