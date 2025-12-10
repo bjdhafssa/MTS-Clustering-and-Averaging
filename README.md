@@ -12,10 +12,11 @@ Here is an overview of the main aspects covered:
     
 * K-medoids-based clustering: Comparison with k-means results.
     
-* Nine clustering schemes in total: An in-depth analysis of various combinations, evaluated using two intrinsic and seven extrinsic criteria, and runtime for each. 
+* Eleven clustering schemes in total: An in-depth analysis of various combinations, evaluated using two intrinsic and seven extrinsic criteria, and runtime for each. 
   
       In aeon: Kmedoids-DTW | Kmedoids-MSM | Kmedoids-ShapeDTW | Kmeans-MSM | Kmeans-ShapeDTW |
       In tslearn: Kmeans-DTW | Kmeans-SoftDTW | KernelKmeans-GAK | Kshape
+      Unique Contribution: We also integrated two new kernel-based methods, kmedoids-kdtw and kmeans-teka. This combination was not supported in any existing library, making this its [first implementation](https://github.com/pfmarteau/KMeans_TEKA). These last follow the structure of aeon inputs.
   
 ## 2- Comparison of Averaging Methods
 
